@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heading</title>
+</head>
+<body>
+    <script>
+  // Function to generate a random color in hexadecimal format
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  // Function to change the background color
+  function changeBackgroundColor() {
+    document.body.style.backgroundColor = getRandomColor();
+  }
+
+  // Set an interval to change the background color every 3 seconds (3000 milliseconds)
+  setInterval(changeBackgroundColor, 3000);
+</script>
+
+
+    <h2>form</h2>
+    <label>enter your name:</label>
+    <input type="text" name="enter your name:" size="20"/><br>
+    <label>enter your department:</label>
+    <input type="text" name="enter your department:" size="20"/><br>
+    
+    tell me about yourself:
+    <textarea cols="80 rows" rows="5" value="tell me about yourself">
+    </textarea><br>
+    <label>do you exercise at home?</label><br>
+    <input type="checkbox" id="yes" name="do you exercise at home" value="yes">
+    <label for="yes">yes</label><br>
+    <input type="checkbox" id="no" name="do you exercise at home" value="no">
+    <label for="no">no</label><br>
+    <label>how do you like to read about your favorite topics</label><br>
+    <input type="checkbox" id="books" value="books">
+    <label for="books">books</label><br>
+    <input type="checkbox" id="online resource">
+    <label>online resource</label><br>
+    <input type="checkbox" id="phone app"/>phone app<br>
+     <input type="checkbox" name="Magazines"/> Magazines<br><br>
+        What genere of movies do you like ? 
+        <select>
+            <option value="Comedy">Comedy</option>
+            <option value="Horror">Horror</option>
+            <option value="Crime">Crime</option>
+            <option value="Devotional">Devotional</option>
+          </select><br><br>
+          <input type="submit" value="Submit">
+    <script>
+        alert('register this form');
+    </script>
+</form>
+</body>
+</html>
